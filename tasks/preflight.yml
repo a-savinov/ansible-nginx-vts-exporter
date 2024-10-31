@@ -25,8 +25,8 @@
 
 - name: Gather currently installed nginx_vts_exporter version (if any)
   command: "/usr/local/bin/nginx-vts-exporter --version"
-  args:
-    warn: false
+  # args:
+  #   warn: false
   changed_when: false
   register: __nginx_vts_exporter_current_version_output
   when: __nginx_vts_exporter_is_installed.stat.exists
