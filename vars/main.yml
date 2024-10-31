@@ -9,4 +9,4 @@ go_arch_map:
 go_arch: "{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}"
 
 nginx_vts_exporter_download_url: "https://github.com/sysulq/nginx-vts-exporter/releases/download"
-nginx_vts_exporter_download_basename: "nginx-vts-exporter_{{ nginx_vts_exporter_version }}_linux_{{ go_arch }}"
+nginx_vts_exporter_download_basename: "nginx-vtx-exporter_{{ nginx_vts_exporter_version }}_linux_{{ go_arch }}"
