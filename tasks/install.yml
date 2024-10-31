@@ -47,7 +47,7 @@
 
 - name: Propagate exporter binaries
   copy:
-    src: "/tmp/{{ nginx_vts_exporter_download_basename }}/nginx-vts-exporter"
+    src: "/tmp/nginx-vtx-exporter"
     remote_src: yes
     dest: "/usr/local/bin/nginx-vts-exporter"
     mode: 0755
